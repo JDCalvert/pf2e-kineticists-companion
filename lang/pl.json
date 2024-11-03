@@ -1,0 +1,61 @@
+{
+    "pf2e-kineticists-companion": {
+        "config": {
+            "option": {
+                "always": "Zawsze",
+                "never": "Nigdy",
+                "ask": "Pytaj za każdym razem"
+            },
+            "dialog": {
+                "yes": "Tak",
+                "no": "Nie",
+                "remember-my-answer": "Zapamiętaj moją odpowiedź"
+            }
+        },
+        "fresh-produce": {
+            "target-outside-aura": "Bieżący cel nie znajduje się wewnątrz aury kinetycznej.",
+            "already-eaten": "{name} zjadł już Świeże Produkty w ciągu ostatnich dziesięciu minut."
+        },
+        "metal-carapace": {
+            "config": {
+                "name": "Metalowy Karapaks: Utwórz tarczę"
+            },
+            "shield-prompt": {
+                "title": "Tarcza z Metalowego Karapaksu",
+                "content": "Chcesz stworzyć tarczę z Metalowego Karapaksu w wolnej ręce?"
+            },
+            "shield-destroyed": "Tarcza z Metalowego Karapaksu w posiadaniu {name} została uszkodzona i rozpadła się na rdzawe fragmenty.",
+            "armor-destroyed": "Metalowy Karapaks {name} został rozbity w wyniku trafienia krytycznego."
+        },
+        "hardwood-armor": {
+            "config": {
+                "name": "Pancerz z Twardego Drewna: Utwórz tarczę"
+            },
+            "shield-prompt": {
+                "title": "Tarcza z Twardego Drewna",
+                "content": "Chcesz stworzyć drewnianą tarczę w wolnej ręce?"
+            },
+            "shield-destroyed": "Drewniania tarcza w posiadaniu {name} została uszkodzona i rozpadła się."
+        },
+        "timber-sentinel": {
+            "config": {
+                "enable": "Drewniany Wartownik: Włącz automatyzację"
+            },
+            "no-gamemaster": {
+                "create": "Drzewo Obrońca nie mogło zostać utworzone, ponieważ nie ma w grze Mistrza Gry.",
+                "intercept": "Drzewo Obrońca nie przechwyciło ataku, ponieważ nie ma w grze Mistrza Gry."
+            },
+            "take-damage": "{name} przechwytuje Atak i otrzymuje {damage} obrażeń.",
+            "take-damage-destroyed": "{name} przechwytuje Atak, otrzymuje {damage} obrażeń i zostaje zniszczony."
+        },
+        "thermal-nimbus": {
+            "damage-roll-not-found": "Nie znaleziono klasy DamageRoll, więc automatyzacja Termicznej Otuliny nie będzie działać.",
+            "config": {
+                "auto-damage": {
+                    "name": "Termiczna Otulina: Automatyczne nakładanie obrażeń",
+                    "hint": "Obrażenia nadal będą zadawane automatycznie, ale muszą być nakładane ręcznie."
+                }
+            }
+        }
+    }
+}
