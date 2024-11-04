@@ -12,13 +12,47 @@
                 "remember-my-answer": "Zapamiętaj moją odpowiedź"
             }
         },
+        "armor-in-earth": {
+            "name": "Zbroja z Ziemi",
+            "config": {
+                "unlimited-duration": {
+                    "name": "Nieograniczony czas trwania",
+                    "hint": "Usuwa czas trwania z efektu Zbroi z Ziemi. Przydatne do okresowego korzystania z impulsu podczas eksploracji."
+                }
+            }
+        },
         "fresh-produce": {
+            "name": "Świeże Produkty",
             "target-outside-aura": "Bieżący cel nie znajduje się wewnątrz aury kinetycznej.",
             "already-eaten": "{name} zjadł już Świeże Produkty w ciągu ostatnich dziesięciu minut."
         },
-        "metal-carapace": {
+        "hardwood-armor": {
+            "name": "Pancerz z Twardego Drewna",
             "config": {
-                "name": "Metalowy Karapaks: Utwórz tarczę"
+                "create-shield": {
+                    "name": "Utwórz tarczę"
+                },
+                "unlimited-duration": {
+                    "name": "Nieograniczony czas trwania",
+                    "hint": "Usunięto czas trwania efektu Pancerza z Twardego Drewna. Przydatne do okresowego korzystania z impulsu podczas eksploracji."
+                }
+            },
+            "shield-prompt": {
+                "title": "Tarcza z Twardego Drewna",
+                "content": "Chcesz stworzyć drewnianą tarczę w wolnej ręce?"
+            },
+            "shield-destroyed": "Drewniania tarcza w posiadaniu {name} została uszkodzona i rozpadła się."
+        },
+        "metal-carapace": {
+            "name": "Metalowy Karapaks",
+            "config": {
+                "create-shield": {
+                    "name": "Utwórz tarczę"
+                },
+                "unlimited-duration": {
+                    "name": "Nieograniczony czas trwania",
+                    "hint": "Usunięto czas trwania efektu Metalowego Karapaksu. Przydatne do okresowego używania impulsu podczas eksploracji."
+                }
             },
             "shield-prompt": {
                 "title": "Tarcza z Metalowego Karapaksu",
@@ -27,19 +61,22 @@
             "shield-destroyed": "Tarcza z Metalowego Karapaksu w posiadaniu {name} została uszkodzona i rozpadła się na rdzawe fragmenty.",
             "armor-destroyed": "Metalowy Karapaks {name} został rozbity w wyniku trafienia krytycznego."
         },
-        "hardwood-armor": {
+        "thermal-nimbus": {
+            "name": "Termiczna Otulina",
+            "damage-roll-not-found": "Nie znaleziono klasy DamageRoll, więc automatyzacja Termicznej Otuliny nie będzie działać.",
             "config": {
-                "name": "Pancerz z Twardego Drewna: Utwórz tarczę"
-            },
-            "shield-prompt": {
-                "title": "Tarcza z Twardego Drewna",
-                "content": "Chcesz stworzyć drewnianą tarczę w wolnej ręce?"
-            },
-            "shield-destroyed": "Drewniania tarcza w posiadaniu {name} została uszkodzona i rozpadła się."
+                "auto-damage": {
+                    "name": "Automatyczne nakładanie obrażeń",
+                    "hint": "Obrażenia nadal będą zadawane automatycznie, ale muszą być nakładane ręcznie."
+                }
+            }
         },
         "timber-sentinel": {
+            "name": "Drewniany Wartownik",
             "config": {
-                "enable": "Drewniany Wartownik: Włącz automatyzację"
+                "enable": {
+                    "name": "Włącz automatyzację"
+                }
             },
             "no-gamemaster": {
                 "create": "Drzewo Obrońca nie mogło zostać utworzone, ponieważ nie ma w grze Mistrza Gry.",
@@ -47,15 +84,6 @@
             },
             "take-damage": "{name} przechwytuje Atak i otrzymuje {damage} obrażeń.",
             "take-damage-destroyed": "{name} przechwytuje Atak, otrzymuje {damage} obrażeń i zostaje zniszczony."
-        },
-        "thermal-nimbus": {
-            "damage-roll-not-found": "Nie znaleziono klasy DamageRoll, więc automatyzacja Termicznej Otuliny nie będzie działać.",
-            "config": {
-                "auto-damage": {
-                    "name": "Termiczna Otulina: Automatyczne nakładanie obrażeń",
-                    "hint": "Obrażenia nadal będą zadawane automatycznie, ale muszą być nakładane ręcznie."
-                }
-            }
         }
     }
 }
