@@ -61,6 +61,9 @@
             "shield-destroyed": "Tarcza z Metalowego Karapaksu w posiadaniu {name} została uszkodzona i rozpadła się na rdzawe fragmenty.",
             "armor-destroyed": "Metalowy Karapaks {name} został rozbity w wyniku trafienia krytycznego."
         },
+        "oceans-balm": {
+            "immune": "{name} ma obecnie niewrażliwość na leczenie Oceaniczny Balsamem."
+        },
         "thermal-nimbus": {
             "name": "Termiczna Otulina",
             "damage-roll-not-found": "Nie znaleziono klasy DamageRoll, więc automatyzacja Termicznej Otuliny nie będzie działać.",
@@ -84,6 +87,9 @@
             },
             "take-damage": "{name} przechwytuje Atak i otrzymuje {damage} obrażeń.",
             "take-damage-destroyed": "{name} przechwytuje Atak, otrzymuje {damage} obrażeń i zostaje zniszczony."
+        },
+        "torrent-in-the-blood": {
+            "immune": "{name} ma obecnie niewrażliwość na Strumień Krwi."
         }
     }
 }
