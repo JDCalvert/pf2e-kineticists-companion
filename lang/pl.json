@@ -21,6 +21,9 @@
                 }
             }
         },
+        "dash-of-herbs": {
+            "immune": "{name} jest obecnie niewrażliwy na Szczyptę Ziół."
+        },
         "fresh-produce": {
             "name": "Świeże Produkty",
             "target-outside-aura": "Bieżący cel nie znajduje się wewnątrz aury kinetycznej.",
