@@ -46,6 +46,26 @@
             },
             "shield-destroyed": "Drewniania tarcza w posiadaniu {name} została uszkodzona i rozpadła się."
         },
+        "ignite-the-sun": {
+            "name": "Zapłon Słońca",
+            "config": {
+                "enable": {
+                    "name": "Włącz automatyzację"
+                }
+            },
+            "sustain-prompt": {
+                "title": "Podtrzymanie",
+                "content": "Czy chcesz zwiększyć rozmiar słońca?"
+            },
+            "no-gamemaster": {
+                "create": "Nie ma podłączonego Mistrza Gry, który stworzyłby słońce.",
+                "sustain": "Nie ma podłączonego Mistrza Gry, który mógłby rozszerzyć lub przesunąć słońce.",
+                "delete": "Nie ma podłączonego Mistrza Gry, który mógłby usunąć słońce."
+            },
+            "no-user": {
+                "roll-damage": "Nie ma aktywnego użytkownika, który mógłby zadać obrażenia za Zapłon Słońca postaci {name}."
+            }
+        },
         "metal-carapace": {
             "name": "Metalowy Karapaks",
             "config": {
@@ -66,6 +86,12 @@
         },
         "oceans-balm": {
             "immune": "{name} ma obecnie niewrażliwość na leczenie Oceaniczny Balsamem."
+        },
+        "sustain": {
+            "prompt": {
+                "title": "Podtrzymanie",
+                "content": "Wybierz efekt do podtrzymania"
+            }
         },
         "thermal-nimbus": {
             "name": "Termiczna Otulina",
