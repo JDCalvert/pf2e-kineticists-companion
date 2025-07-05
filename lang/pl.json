@@ -90,7 +90,8 @@
         "sustain": {
             "prompt": {
                 "title": "Podtrzymanie",
-                "content": "Wybierz efekt do podtrzymania"
+                "content": "Wybierz efekt do podtrzymania",
+                "effect": "Efekt"
             }
         },
         "thermal-nimbus": {
