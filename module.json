@@ -20,6 +20,12 @@
                 "type": "system"
             }
         ],
+        "requires": [
+            {
+                "id": "lib-item-select-dialog",
+                "type": "module"
+            }
+        ],
         "recommends": [
             {
                 "id": "portal-lib",

@@ -1,4 +1,4 @@
-import { SelectDialog } from "../utils/select-dialog.js";
+import * as ItemSelect from "../../../lib-item-select-dialog/scripts/item-select-dialog.js";
 import { User } from "../utils/user.js";
 import { Util } from "../utils/util.js";
 
@@ -36,14 +36,33 @@ export class Sustain {
                         return;
                     }
 
-                    SelectDialog.selectItem(this.localize("prompt.title"), this.localize("prompt.content"), effects)
+                    ItemSelect.getItem(
+                        {
+                            title: this.localize("prompt.title"),
+                            heading: this.localize("prompt.content"),
+                            sections: [
+                                new ItemSelect.Section(
+                                    this.localize("prompt.effect"),
+                                    effects.map(
+                                        effect => new ItemSelect.Choice(
+                                            effect.id,
+                                            effect.name,
+                                            [],
+                                            effect.img,
+                                            effect
+                                        )
+                                    )
+                                )
+                            ]
+                        }
+                    )
                         .then(
-                            async item => {
-                                if (!item) {
+                            async result => {
+                                if (!result) {
                                     return;
                                 }
 
-                                item = await item.update({ "flags.pf2e-kineticists-companion.sustain.sustained": true });
+                                const item = await result.choice.item.update({ "flags.pf2e-kineticists-companion.sustain.sustained": true });
 
                                 this.sustainableEffects.get(item.sourceId)(item);
                             }

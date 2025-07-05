@@ -90,7 +90,8 @@
         "sustain": {
             "prompt": {
                 "title": "Sustain",
-                "content": "Choose an effect to sustain"
+                "content": "Choose an effect to sustain",
+                "effect": "Effect"
             }
         },
         "thermal-nimbus": {
