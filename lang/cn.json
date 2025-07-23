@@ -1,0 +1,125 @@
+{
+    "pf2e-kineticists-companion": {
+        "timber-sentinel": {
+            "take-damage-destroyed": "{name}拦截了此次打击，承受{damage}点伤害并被摧毁。",
+            "name": "木材哨兵 Timber Sentinel",
+            "config": {
+                "enable": {
+                    "name": "启用自动化"
+                }
+            },
+            "no-gamemaster": {
+                "create": "因GM未在线，无法创建守护灵树。",
+                "intercept": "因GM未在线，守护灵树无法拦截打击。"
+            },
+            "take-damage": "{name}拦截了此次打击并承受{damage}点伤害。"
+        },
+        "metal-carapace": {
+            "config": {
+                "unlimited-duration": {
+                    "hint": "移除金属甲壳效果的持续时间。有助于在探索阶段周期性重复使用该涌动。",
+                    "name": "解除持续时间限制"
+                },
+                "create-shield": {
+                    "name": "创造钢盾"
+                }
+            },
+            "shield-destroyed": "{name}的金属甲壳钢盾已破损，并碎成锈蚀的残片。",
+            "name": "金属甲壳 Metal Carapace",
+            "shield-prompt": {
+                "title": "金属甲壳盾牌 Metal Carapace Shield",
+                "content": "你要在空闲手中创造一面金属甲壳钢盾吗？"
+            },
+            "armor-destroyed": "{name}的金属甲壳因重击碎裂，涌动结束。"
+        },
+        "hardwood-armor": {
+            "shield-prompt": {
+                "title": "硬木护甲盾牌 Hardwood Armor Shield",
+                "content": "你要在空闲手中创造一面木盾吗？"
+            },
+            "name": "硬木护甲 Hardwood Armor",
+            "config": {
+                "create-shield": {
+                    "name": "创造木盾"
+                },
+                "unlimited-duration": {
+                    "name": "解除持续时间限制",
+                    "hint": "移除硬木护甲效果的持续时间。有助于在探索阶段周期性重复使用该涌动。"
+                }
+            },
+            "shield-destroyed": "{name}的木盾已破损，并且腐朽。"
+        },
+        "ignite-the-sun": {
+            "sustain-prompt": {
+                "content": "你要扩大太阳的爆发范围吗？",
+                "title": "维持"
+            },
+            "name": "点燃烈日 Ignite the Sun",
+            "config": {
+                "enable": {
+                    "name": "启用自动化"
+                }
+            },
+            "no-gamemaster": {
+                "sustain": "未连接到GM端，无法扩大或移动太阳。",
+                "create": "未连接到GM端，无法创建太阳 。",
+                "delete": "未连接到GM端，无法删除太阳。"
+            },
+            "no-user": {
+                "roll-damage": "用户未在线，无法为{name}的点燃烈日骰掷伤害。"
+            }
+        },
+        "thermal-nimbus": {
+            "config": {
+                "auto-damage": {
+                    "hint": "伤害仍会自动掷骰，但必须手动应用。",
+                    "name": "自动应用伤害"
+                }
+            },
+            "name": "热浪灵气 Thermal Nimbus",
+            "damage-roll-not-found": "未找到伤害掷骰类型，因此热浪灵气自动化将无法运行。"
+        },
+        "config": {
+            "option": {
+                "always": "始终",
+                "never": "从不",
+                "ask": "每次进行询问"
+            },
+            "dialog": {
+                "yes": "是",
+                "no": "否",
+                "remember-my-answer": "记住我的回答"
+            }
+        },
+        "armor-in-earth": {
+            "name": "岩土铠甲 Armor in Earth",
+            "config": {
+                "unlimited-duration": {
+                    "hint": "移除岩土铠甲效果的持续时间。有助于在探索阶段周期性重复使用该涌动。",
+                    "name": "解除持续时间限制"
+                }
+            }
+        },
+        "dash-of-herbs": {
+            "immune": "{name}现在对少许草药临时免疫。"
+        },
+        "fresh-produce": {
+            "name": "新鲜果蔬 Fresh Produce",
+            "target-outside-aura": "所选目标不在你的御能灵光中。",
+            "already-eaten": "{name}在过去10分钟内已吃过新鲜果蔬。"
+        },
+        "oceans-balm": {
+            "immune": "{name}当前对来自大洋药膏的治疗临时免疫。"
+        },
+        "sustain": {
+            "prompt": {
+                "title": "维持",
+                "content": "选择一项效果维持",
+                "effect": "效果"
+            }
+        },
+        "torrent-in-the-blood": {
+            "immune": "{name}当前对血中激流临时免疫。"
+        }
+    }
+}

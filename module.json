@@ -90,6 +90,11 @@
             "lang": "pl",
             "name": "Polski",
             "path": "lang/pl.json"
+        },
+        {
+            "lang": "cn",
+            "name": "简体中文",
+            "path": "lang/cn.json"
         }
     ]
 }
