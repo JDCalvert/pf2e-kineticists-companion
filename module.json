@@ -87,6 +87,16 @@
             "path": "lang/en.json"
         },
         {
+            "lang": "de",
+            "name": "Deutsch",
+            "path": "lang/de.json"
+        },
+        {
+            "lang": "fr",
+            "name": "Français",
+            "path": "lang/fr.json"
+        },
+        {
             "lang": "pl",
             "name": "Polski",
             "path": "lang/pl.json"
@@ -94,7 +104,7 @@
         {
             "lang": "cn",
             "name": "中文（简体）",
-            "path": "lang/cn.json"
+            "path": "lang/zh-CN.json"
         }
     ]
 }
