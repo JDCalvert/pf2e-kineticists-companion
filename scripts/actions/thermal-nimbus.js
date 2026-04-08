@@ -99,7 +99,7 @@ export class ThermalNimbus {
 
         Chat.rollInlineDamage(
             thermalNimbusFeat,
-            "(floor(@actor.level/2))[@actor.flags.pf2e.kineticist.thermalNimbus]",
+            "(floor(@actor.level/2))[@actor.flags.system.kineticist.thermalNimbus]",
             {
                 "pf2e-kineticists-companion": {
                     "applyDamage": {
