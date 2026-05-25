@@ -1,3 +1,6 @@
+## 2.1.3 - 2026-05-25 (Pathfinder 2e 8.1.2)
+- Update compatibility with Foundry v14.
+
 ## 2.1.2 - 2026-05-25 (Pathfinder 2e 6.12.4 / 7.12.2)
 - Fixed Thermal Nimbus damage automatic damage.
 - Fixed Ignite the Sun's additional damage to upgrade to 1d8 if the Kineticist has the fire impulse junction.

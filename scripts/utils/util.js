@@ -15,6 +15,10 @@ export class Util {
         return foundry.utils.isNewerVersion(game.version, "13");
     }
 
+    static isUsingForcedDeletion() {
+        return foundry.utils.isNewerVersion(game.version, "14");
+    }
+
     static async render(path, data) {
         if (this.isUsingApplicationV2()) {
             return foundry.applications.handlebars.renderTemplate(path, data);

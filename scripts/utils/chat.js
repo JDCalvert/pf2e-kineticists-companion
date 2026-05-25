@@ -19,7 +19,7 @@ export class Chat {
     static async postToChat(actor, message, imgPath) {
         ChatMessage.create(
             {
-                type: CONST.CHAT_MESSAGE_STYLES.EMOTE,
+                style: CONST.CHAT_MESSAGE_STYLES.EMOTE,
                 speaker: ChatMessage.getSpeaker({ actor }),
                 content: await Util.render(
                     "./systems/pf2e/templates/chat/action/content.hbs",

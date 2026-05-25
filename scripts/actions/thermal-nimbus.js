@@ -26,7 +26,8 @@ export class ThermalNimbus {
                         {
                             "affects": "enemies",
                             "events": ["enter"],
-                            "uuid": THERMAL_NIMBUS_DAMAGE_EFFECT_ID
+                            "uuid": THERMAL_NIMBUS_DAMAGE_EFFECT_ID,
+                            "includesSelf": false
                         }
                     );
                 }

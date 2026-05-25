@@ -2,7 +2,7 @@
 A module for the Foundry VTT Pathfinder 2e system that provides improved automation for the Kineticist class.
 
 ![Github All Releases](https://img.shields.io/github/downloads/JDCalvert/pf2e-kineticists-companion/total.svg)
-![Github Latest Release](https://img.shields.io/github/downloads/JDCalvert/pf2e-kineticists-companion/2.1.2/total)
+![Github Latest Release](https://img.shields.io/github/downloads/JDCalvert/pf2e-kineticists-companion/2.1.3/total)
 
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/jdcalvert)
 

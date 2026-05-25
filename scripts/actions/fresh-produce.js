@@ -1,3 +1,5 @@
+import { Util } from "../utils/util.js";
+
 const FRESH_PRODUCE_FEAT_ID = "Compendium.pf2e.feats-srd.Item.IcAEMf94XoTvtzAO";
 const FRESH_PRODUCE_ITEM_ID = "Compendium.pf2e-kineticists-companion.items.Item.bkoprewUGSABeh1p";
 const FRESH_PRODUCE_EFFECT_ID = "Compendium.pf2e.feat-effects.Item.2GWZgsvMJF9DN0DO";
@@ -181,13 +183,23 @@ export class FreshProduce {
 
                 // Reset the combatant's signature list
                 if (actor.primaryUpdater == game.user) {
-                    actor.update(
-                        {
-                            "flags": {
-                                "-=pf2e-kineticists-companion": null
+                    if (Util.isUsingForcedDeletion()) {
+                        actor.update(
+                            {
+                                "flags": {
+                                    "pf2e-kineticists-companion": new foundry.data.operators.ForcedDeletion()
+                                }
                             }
-                        }
-                    );
+                        );
+                    } else {
+                        actor.update(
+                            {
+                                "flags": {
+                                    "-=pf2e-kineticists-companion": null
+                                }
+                            }
+                        );
+                    }
                 }
             }
         );
