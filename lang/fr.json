@@ -1,3 +1,125 @@
 {
-    "pf2e-kineticists-companion": {}
+  "pf2e-kineticists-companion": {
+    "config": {
+      "option": {
+        "always": "Toujours",
+        "never": "Jamais",
+        "ask": "Demandez à chaque fois"
+      },
+      "dialog": {
+        "yes": "Oui",
+        "no": "Non",
+        "remember-my-answer": "Se souvenir de ma réponse"
+      }
+    },
+    "armor-in-earth": {
+      "name": "Armure de terre",
+      "config": {
+        "unlimited-duration": {
+          "name": "Durée illimitée",
+          "hint": "Supprime la durée de l'effet Armure de terre. Utile pour gérer la réutilisation de l'impulsion périodiquement au cours de l'exploration."
+        }
+      }
+    },
+    "dash-of-herbs": {
+      "immune": "{name} est actuellement immunisé contre Pincée d'herbes."
+    },
+    "fresh-produce": {
+      "name": "Produit frais",
+      "target-outside-aura": "Votre cible actuelle n'est pas au sein de votre aura kinétique.",
+      "already-eaten": "{name} a déjà consommé des produits frais au cours des dix dernières minutes."
+    },
+    "hardwood-armor": {
+      "name": "Armure de bois dur",
+      "config": {
+        "create-shield": {
+          "name": "Créer un bouclier"
+        },
+        "unlimited-duration": {
+          "name": "Durée illimitée",
+          "hint": "Supprime la durée de l'effet Armure de bois dur. Utile pour gérer la réutilisation de l'impulsion périodiquement au cours de l'exploration."
+        }
+      },
+      "shield-prompt": {
+        "title": "Bouclier d'armure de bois dur",
+        "content": "Souhaitez-vous créer un bouclier en bois dur dans votre main libre ?"
+      },
+      "shield-destroyed": "Le bouclier en bois de {name} s'est brisé et est tombé en miettes."
+    },
+    "ignite-the-sun": {
+      "name": "Enflammez le soleil",
+      "config": {
+        "enable": {
+          "name": "Activer l'automatisation"
+        }
+      },
+      "sustain-prompt": {
+        "title": "Maintenir",
+        "content": "Souhaitez-vous agrandir la taille du soleil ?"
+      },
+      "no-gamemaster": {
+        "create": "Aucun Maître du Jeu n'est connecté pour créer le soleil.",
+        "sustain": "Aucun Maître du Jeu n'est connecté pour étendre ou déplacer le soleil.",
+        "delete": "Aucun Maître du Jeu n'est connecté pour supprimer le soleil."
+      },
+      "no-user": {
+        "roll-damage": "Aucun utilisateur actif capable de lancer les dégâts pour « Enflammez le soleil » de {name}."
+      }
+    },
+    "metal-carapace": {
+      "name": "Carapace métallique",
+      "config": {
+        "create-shield": {
+          "name": "Créer un bouclier"
+        },
+        "unlimited-duration": {
+          "name": "Durée illimitée",
+          "hint": "Supprime la durée de l'effet de Carapace métallique. Utile pour gérer la réutilisation de l'impulsion périodiquement au cours de l'exploration."
+        }
+      },
+      "shield-prompt": {
+        "title": "Bouclier de Carapace métallique",
+        "content": "Souhaitez-vous créer un bouclier de carapace métallique dans votre main libre ?"
+      },
+      "shield-destroyed": "Le bouclier de Carapace métallique de {name} a été brisé et s'est effrité en éclats de rouille.",
+      "armor-destroyed": "La carapace métallique de {name} a été brisée par le coup critique."
+    },
+    "oceans-balm": {
+      "immune": "{name} est actuellement immunisé contre les effets curatifs du Baume de l'océan."
+    },
+    "sustain": {
+      "prompt": {
+        "title": "Maintenir",
+        "content": "Choisissez un effet à maintenir",
+        "effect": "Effet"
+      }
+    },
+    "thermal-nimbus": {
+      "name": "Nimbe thermique",
+      "damage-roll-not-found": "La classe DamageRoll est introuvable, l'automatisation de Nimbe thermique ne fonctionnera donc pas.",
+      "config": {
+        "auto-damage": {
+          "name": "Appliquer automatiquement les dégâts",
+          "hint": "Les dégâts seront toujours calculés automatiquement, mais devront être appliqués manuellement."
+        }
+      }
+    },
+    "timber-sentinel": {
+      "name": "Arbre sentinelle",
+      "config": {
+        "enable": {
+          "name": "Activer l'automatisation"
+        }
+      },
+      "no-gamemaster": {
+        "create": "L'Arbre protecteur n'a pas pu être créé car aucun Maître du Jeu n'est présent.",
+        "intercept": "L'Arbre protecteur n'a pas intercepté la Frappe car aucun Maître du Jeu n'était présent."
+      },
+      "take-damage": "{name} intercepte la Frappe et subit {damage} dégâts.",
+      "take-damage-destroyed": "{name} intercepte la Frappe, subit {damage} dégâts et est détruit."
+    },
+    "torrent-in-the-blood": {
+      "immune": "{name} est actuellement immunisé contre Torrent dans le sang."
+    }
+  }
 }
