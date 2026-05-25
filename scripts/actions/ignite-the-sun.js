@@ -81,6 +81,8 @@ export class IgniteTheSun {
                             return;
                         }
 
+                        const fireImpulseJunction = actor.getRollOptions().find(option => option == "junction:fire:impulse");
+
                         // Create the sun, template, and light
                         const sunData = await Socket.call(
                             "igniteTheSun.create",
@@ -92,7 +94,8 @@ export class IgniteTheSun {
                                     actor: actor.uuid,
                                     rollOptions: [
                                         ...actor.getSelfRollOptions("origin"),
-                                        ...message.item.getRollOptions("origin:item")
+                                        ...message.item.getRollOptions("origin:item"),
+                                        ...(fireImpulseJunction ? [fireImpulseJunction] : [])
                                     ],
                                     type: message.item.type,
                                     uuid: message.item.uuid
@@ -149,7 +152,12 @@ export class IgniteTheSun {
         Hooks.on(
             "preDeleteToken",
             token => {
-                const ignitedSunAura = token.actor.itemTypes.effect.find(effect => effect.sourceId === IGNITED_SUN_AURA_ID);
+                const actor = token.actor;
+                if (!actor) {
+                    return;
+                }
+
+                const ignitedSunAura = actor.itemTypes.effect.find(effect => effect.sourceId === IGNITED_SUN_AURA_ID);
                 if (ignitedSunAura) {
                     const flags = Util.getFlags(ignitedSunAura);
                     if (!flags) {
@@ -304,6 +312,8 @@ export class IgniteTheSun {
             return;
         }
 
+        console.log(data);
+
         // Find either an actor in the world, or create one
         let sunActor = game.actors.find(actor => actor.sourceId === SUN_ACTOR_ID);
         if (!sunActor) {
@@ -375,6 +385,16 @@ export class IgniteTheSun {
             lightId: sunLight.uuid,
             originActorId: data.origin.actor
         };
+
+        const fireImpulseJunction = data.origin.rollOptions.find(option => option === "junction:fire:impulse");
+        if (fireImpulseJunction) {
+            ignitedSunAuraSource.system.rules.push(
+                {
+                    "key": "RollOption",
+                    "option": `self:${fireImpulseJunction}`
+                }
+            );
+        }
 
         await sunToken.actor.createEmbeddedDocuments("Item", [ignitedSunAuraSource]);
 

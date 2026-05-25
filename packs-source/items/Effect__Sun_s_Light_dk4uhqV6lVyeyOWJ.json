@@ -15,14 +15,22 @@
         "selector": "strike-damage",
         "diceNumber": 1,
         "dieSize": "d6",
-        "damageType": "fire"
+        "damageType": "fire",
+        "predicate": [
+          {
+            "not": "parent:origin:junction:fire:impulse"
+          }
+        ]
       },
       {
         "key": "DamageDice",
         "label": "Sun's Light",
         "selector": "spell-damage",
         "predicate": [
-          "item:damage:fire"
+          "item:damage:fire",
+          {
+            "not": "parent:origin:junction:fire:impulse"
+          }
         ],
         "diceNumber": 1,
         "dieSize": "d6",
@@ -37,10 +45,52 @@
           "fire",
           {
             "not": "action:ignite-the-sun"
+          },
+          {
+            "not": "parent:origin:junction:fire:impulse"
           }
         ],
         "diceNumber": 1,
         "dieSize": "d6",
+        "damageType": "fire"
+      },
+      {
+        "key": "DamageDice",
+        "label": "Sun's Light",
+        "selector": "strike-damage",
+        "diceNumber": 1,
+        "dieSize": "d8",
+        "damageType": "fire",
+        "predicate": [
+          "parent:origin:junction:fire:impulse"
+        ]
+      },
+      {
+        "key": "DamageDice",
+        "label": "Sun's Light",
+        "selector": "spell-damage",
+        "predicate": [
+          "item:damage:fire",
+          "parent:origin:junction:fire:impulse"
+        ],
+        "diceNumber": 1,
+        "dieSize": "d8",
+        "damageType": "fire"
+      },
+      {
+        "key": "DamageDice",
+        "label": "Sun's Light",
+        "selector": "damage",
+        "predicate": [
+          "impulse",
+          "fire",
+          "parent:origin:junction:fire:impulse",
+          {
+            "not": "action:ignite-the-sun"
+          }
+        ],
+        "diceNumber": 1,
+        "dieSize": "d8",
         "damageType": "fire"
       }
     ],

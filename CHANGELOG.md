@@ -1,3 +1,7 @@
+## 2.1.2 - 2026-05-25 (Pathfinder 2e 6.12.4 / 7.12.2)
+- Fixed Thermal Nimbus damage automatic damage.
+- Fixed Ignite the Sun's additional damage to upgrade to 1d8 if the Kineticist has the fire impulse junction.
+
 ## 2.1.1 - 2025-08-05 (Pathfinder 2e 7.3.1)
 - Make armor impulses' armor size match the actor size.
 
