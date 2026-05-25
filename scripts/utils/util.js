@@ -1,4 +1,8 @@
 export class Util {
+    static localize(key, params) {
+        return game.i18n.format(`pf2e-kineticists-companion.util.${key}`, params);
+    }
+
     static getFlags(object) {
         return object?.flags?.["pf2e-kineticists-companion"];
     }
@@ -12,10 +16,10 @@ export class Util {
     }
 
     static async render(path, data) {
-    if (this.isUsingApplicationV2()) {
-        return foundry.applications.handlebars.renderTemplate(path, data);
-    } else {
-        return renderTemplate(path, data);
+        if (this.isUsingApplicationV2()) {
+            return foundry.applications.handlebars.renderTemplate(path, data);
+        } else {
+            return renderTemplate(path, data);
+        }
     }
-}
 }

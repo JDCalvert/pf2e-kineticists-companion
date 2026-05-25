@@ -77,7 +77,7 @@
                 }
             },
             "name": "热浪灵气 Thermal Nimbus",
-            "damage-roll-not-found": "未找到伤害掷骰类型，因此热浪灵气自动化将无法运行。"
+                "damage-roll-not-found": "未找到伤害掷骰类型，因此热浪灵气自动化将无法运行。"
         },
         "config": {
             "option": {

@@ -99,7 +99,7 @@ export class ThermalNimbus {
 
         Chat.rollInlineDamage(
             thermalNimbusFeat,
-            "(floor(@actor.level/2))[@actor.flags.pf2e.kineticist.thermalNimbus]",
+            `(floor(@actor.level/2))[@actor.flags.${ThermalNimbus.#getSystemFlagName()}.kineticist.thermalNimbus]`,
             {
                 "pf2e-kineticists-companion": {
                     "applyDamage": {
@@ -108,5 +108,9 @@ export class ThermalNimbus {
                 }
             }
         );
+    }
+
+    static #getSystemFlagName() {
+        return foundry.utils.isNewerVersion(game.version, "13") ? "system" : "pf2e";
     }
 }

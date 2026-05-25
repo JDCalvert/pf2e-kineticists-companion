@@ -35,8 +35,14 @@ export class Chat {
     static async rollInlineDamage(item, baseFormula, additionalFlags = {}, additionalText = "", additionalRollOptions = []) {
         const html = (await item.getChatData()).description.value;
         const results = $($.parseHTML(html)).find(".inline-roll");
-        const damageDataSet = Array.from(results).find(result => result.dataset.baseFormula === baseFormula).dataset;
+        
+        const damageResult = Array.from(results).find(result => result.dataset.baseFormula === baseFormula);
+        if (!damageResult) {
+            ui.notifications.error(Util.localize("damage-formula-not-found", { item: item.name }));
+            return;
+        }
 
+        const damageDataSet = damageResult.dataset;
         if (!damageDataSet) {
             return;
         }

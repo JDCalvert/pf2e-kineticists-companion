@@ -12,6 +12,9 @@
                 "remember-my-answer": "Remember my answer"
             }
         },
+        "util": {
+            "damage-formula-not-found": "Failed to find formula for inline damage roll for {item}."
+        },
         "armor-in-earth": {
             "name": "Armor in Earth",
             "config": {
