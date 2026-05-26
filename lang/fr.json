@@ -12,6 +12,9 @@
         "remember-my-answer": "Se souvenir de ma réponse"
       }
     },
+    "util": {
+      "damage-formula-not-found": "Formule de calcul intégré pour les dégâts introuvable pour {item}."
+    },
     "armor-in-earth": {
       "name": "Armure de terre",
       "config": {
